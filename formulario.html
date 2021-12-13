@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos3.css">
+
+    <title>Formulario de contacto</title>
+
+    <link rel="stylesheet" href="css/estilos4.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+
+</head>
+
+<body>
+<header class="hero">
+        <nav class="nav__hero">
+            <div class="container nav__container">
+                <div class="logo">
+                    <h2 class="logo__name">Zona Digital 83<span class="point">.</span></h2>
+                </div>
+                <div class="links">
+                    <a href="index.html" class="link">Inicio</a>
+                    <a href="nosotros.html" class="link">Nosotros</a> <!--Nosotros-->
+                    <a href="productos.html" class="link">Productos</a> <!--servicios-->
+                    <a href="galeria.html" class="link">Galeria</a> <!--proyectos-->
+                    <a href="formulario.html" class="link">Formulario</a>  <!--Clientes-->
+                    <a href="personal.html" class="link" >Integrantes</a> <!--personal-->
+                    <div></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="form_wrap">
+
+        <section class="cantact_info">
+            <section class="info_title">
+                <span class="fa fa-user-circle"></span>
+                <h2>INFORMACION<br>DE CONTACTO</h2>
+            </section>
+            <section class="info_items">
+                <p><span class="fa fa-envelope"></span>zonadigital83ml@outlook.com</p>
+                <p><span class="fa fa-mobile"></span> (999) 9 28 70 93 </p>
+            </section>
+        </section>
+
+        <form action="../enviar.php" method="post" class="form_contact">
+            <h2>Envia un mensaje</h2>
+            <div class="user_info">
+                <label for="names">Nombres *</label>
+                <input type="text" id="names" name="nombre" required>
+
+                <label for="phone">Telefono / Celular</label>
+                <input type="text" id="phone" name="telefono">
+
+                <label for="email">Correo electronico *</label>
+                <input type="text" id="email" name="correo" required>
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <input type="submit" value="Enviar Mensaje" id="btnSend">
+            </div>
+        </form>
+
+    </section>
+
+</body>
+
+</html>
